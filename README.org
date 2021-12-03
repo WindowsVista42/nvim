@@ -1,0 +1,39 @@
+#+AUTHOR: Sean Moulton
+#+TITLE: Neovim Keybindings
+#+OPTIONS: toc:nil
+
+| Mode          | Binding     | Explanation               | Command                                                                 |
+|               |             |                           |                                                                         |
+| normal silent | <leader>.   | Find File                 | =:DashboardFindFile<CR>=                                                |
+| normal silent | <leader>/   | Grep                      | =:Telescope live_grep<cr>=                                              |
+| normal silent | <leader>,   | Find Buffer               | =:Telescope buffers<CR>=                                                |
+| normal silent | <leader>ft  | not sure                  | =:Telescope help_tags<CR>=                                              |
+| normal silent | <leader>fh  | history?                  | =:DashboardFindHistory<CR>=                                             |
+| normal silent | <leader>fc  | Change Colors             | =:DashboardChangeColorscheme<CR>=                                       |
+| normal silent | <leader>fw  | not sure                  | =:DashboardFindWord<CR>=                                                |
+| normal silent | <leader>fm  | not sure                  | =:DashboardJumpMark<CR>=                                                |
+| normal silent | <leader>fn  | New File                  | =:DashboardNewFile<CR>=                                                 |
+|               |             |                           |                                                                         |
+| normal        | <leader>fss | Save Session              | =:<C-u>SessionSave<CR>=                                                 |
+| normal        | <leader>fsl | Load Session              | =:<C-u>SessionLoad<CR>=                                                 |
+|               |             |                           |                                                                         |
+| normal        | <leader>q   | Quick Switch Buffers      | =<C-^>=                                                                 |
+|               |             |                           |                                                                         |
+| normal        | <leader>le  | Go-to Declaration         | =<Cmd>lua vim.lsp.buf.declaration()<CR>=                                |
+| normal        | <leader>ld  | Go-to Definition          | =<Cmd>lua vim.lsp.buf.definition()<CR>=                                 |
+| normal        | <leader>lk  | Hover                     | =<Cmd>lua vim.lsp.buf.hover()<CR>=                                      |
+| normal        | <leader>li  | Go-to Implementation      | =<cmd>lua vim.lsp.buf.implementation()<CR>=                             |
+| normal        | <leader>lj  | Signature Help            | =<cmd>lua vim.lsp.buf.signature_help()<CR>=                             |
+| normal        | <leader>lm  | Go-to Previous Diagnostic | =<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>=                           |
+| normal        | <leader>ln  | Go-to Next Diagnostic     | =<cmd>lua vim.lsp.diagnostic.goto_next()<CR>=                           |
+| normal        | <leader>lwa | Add Workspace Folder      | =<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>=                       |
+| normal        | <leader>lwr | Remove Workspace Folder   | =<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>=                    |
+| normal        | <leader>lwl | Print Workspace Folders   | =<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>= |
+| normal        | <leader>lt  | Go-to Type Definition     | =<cmd>lua vim.lsp.buf.type_definition()<CR>=                            |
+| normal        | <leader>lr  | Rename                    | =<cmd>lua vim.lsp.buf.rename()<CR>=                                     |
+| normal        | <leader>lc  | List References           | =<cmd>lua vim.lsp.buf.references()<CR>=                                 |
+| normal        | <leader>ls  | Show Line Diagnostics     | =<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>=               |
+| normal        | <leader>ll  | not sure                  | =<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>=                         |
+| normal        | <leader>la  | Code Action               | =<cmd>lua vim.lsp.buf.code_action()<CR>=                                |
+| normal        | <leader>lf  | Format                    | =<cmd>lua vim.lsp.buf.formatting()<CR>=                                 |
+| normal        | <leader>lf  | Range Format              | =<cmd>lua vim.lsp.buf.range_formatting()<CR>=                           |
