@@ -51,10 +51,21 @@ return require('packer').startup(function()
       'hoob3rt/lualine.nvim',
     }
 
-    -- Indent guides
-    use { 'Yggdroot/indentLine' }
-
     -- Easy motion
     use { 'easymotion/vim-easymotion' }
+
+    -- Glsl highlighting
+    use { 'tikhomirov/vim-glsl' }
+
+    -- Treesitter
+    use { 'nvim-treesitter/nvim-treesitter' }
+
+    use { 'morhetz/gruvbox' }
+    use { 'AlessandroYorba/Alduin' }
+    use { 'sonph/onehalf' }
+    use { 'AlessandroYorba/Sierra' }
+    use { 'rakr/vim-colors/rakr' }
+    use { 'owickstrom/vim-colors-paramount' }
+    use { 'jaredgorski/fogbell.vim' }
 
 end)

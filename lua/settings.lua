@@ -26,7 +26,7 @@ utils.opt('o', 'signcolumn', 'yes')
 -- Highlight on yank
 vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = true}'
 
-vim.o.updatetime = 250
+vim.o.updatetime = 500
 vim.cmd 'autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})'
 
 vim.cmd 'au FocusLost * silent! wa'
