@@ -20,7 +20,7 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<leader>lt', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
     buf_set_keymap('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
     buf_set_keymap('n', '<leader>lc', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-    buf_set_keymap('n', '<leader>ls', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+    buf_set_keymap('n', '<leader>ls', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
     buf_set_keymap('n', '<leader>ll', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
     buf_set_keymap('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
@@ -108,7 +108,7 @@ capabilities.textDocument.codeAction = {
 }
 
 -- LSPs
-local servers = { "rust_analyzer", "clangd", "hls", "zls", "pyright" }
+local servers = { "rust_analyzer", "clangd", "pyright" }
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup { 
         capabilities = capabilities;
@@ -140,10 +140,10 @@ end
 --     };
 -- })
 
-require('nvim-treesitter.configs').setup {
-    ensure_installed = "maintained",
-    sync_install = false,
-    highlight = {
-        enable = true,
-    },
-}
+-- require('nvim-treesitter.configs').setup {
+--     ensure_installed = "maintained",
+--     sync_install = false,
+--     highlight = {
+--         enable = true,
+--     },
+-- }
