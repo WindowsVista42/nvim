@@ -2,7 +2,7 @@
 A neovim config that I happen to use.
 
 ## Setup
-For C/C++ development download clangd and clone this repo into your neovim config folder.  
+For C/C++ development download `clangd` using your favorite package manager and clone this repo into your neovim config folder.  
 Start neovim and run `:PackerInstall`  
 That should be it, have fun.
 
