@@ -1,3 +1,1 @@
-local cmd = vim.cmd
-
-cmd 'colorscheme default'
+vim.cmd 'colorscheme gruvbox'

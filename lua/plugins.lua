@@ -61,11 +61,11 @@ return require('packer').startup(function()
     use { 'nvim-treesitter/nvim-treesitter' }
 
     use { 'morhetz/gruvbox' }
-    use { 'AlessandroYorba/Alduin' }
-    use { 'sonph/onehalf' }
-    use { 'AlessandroYorba/Sierra' }
-    use { 'rakr/vim-colors/rakr' }
-    use { 'owickstrom/vim-colors-paramount' }
-    use { 'jaredgorski/fogbell.vim' }
+    -- use { 'AlessandroYorba/Alduin' }
+    -- use { 'sonph/onehalf' }
+    -- use { 'AlessandroYorba/Sierra' }
+    -- use { 'rakr/vim-colors/rakr' }
+    -- use { 'owickstrom/vim-colors-paramount' }
+    -- use { 'jaredgorski/fogbell.vim' }
 
 end)

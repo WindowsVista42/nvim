@@ -15,5 +15,8 @@ utils.map('', '<down>', '<nop>')
 utils.map('', '<left>', '<nop>')
 utils.map('', '<right>', '<nop>')
 
+-- TODO listing
+-- utils.map('', '', ':grep TODO')
+
 -- SPC SPC to switch between buffers quickly
 -- utils.map('n', '<leader>q', '<C-^>')

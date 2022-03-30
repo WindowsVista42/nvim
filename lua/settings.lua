@@ -1,7 +1,7 @@
 local utils = require('utils')
 
 local cmd = vim.cmd
-local indent = 4
+local indent = 2
 
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
@@ -32,3 +32,4 @@ vim.cmd 'autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float({focusab
 vim.cmd 'au FocusLost * silent! wa'
 vim.cmd 'set autowriteall'
 vim.cmd 'set nowrap'
+

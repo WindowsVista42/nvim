@@ -32,3 +32,5 @@ require('config.completion')
 require('config.lualine')
 require('config.telescope')
 
+-- Hide TODO highlight (i dont know what sets this so its going here for now)
+vim.cmd 'hi clear TODO'
