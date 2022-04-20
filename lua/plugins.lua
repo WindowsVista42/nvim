@@ -1,5 +1,5 @@
 return require('packer').startup(function()
-    
+
     -- Packer can manage itself as an optinal plugin
     use { 'wbthomason/packer.nvim', opt = true}
 

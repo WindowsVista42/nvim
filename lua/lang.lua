@@ -176,7 +176,10 @@ nvim_lsp["sumneko_lua"].setup {
 }
 
 require('nvim-treesitter.configs').setup {
-  ensure_installed = "maintained",
+  ensure_installed = {
+    "c", "cpp", "lua", "rust", "haskell", "python", "make", "cmake", "bash", "fish", "comment",
+    "glsl", "help", "markdown", "ninja", "regex", "todotxt", "toml", "vim", "yaml"
+  },
   sync_install = false,
   highlight = {
     enable = true,
