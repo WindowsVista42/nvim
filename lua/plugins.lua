@@ -58,7 +58,7 @@ return require('packer').startup(function()
     use { 'tikhomirov/vim-glsl' }
 
     -- Treesitter
-    use { 'nvim-treesitter/nvim-treesitter' }
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     use { 'morhetz/gruvbox' }
     -- use { 'AlessandroYorba/Alduin' }
