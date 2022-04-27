@@ -24,3 +24,4 @@ That should be it, have fun.
 
 `<C-j>` - next window  
 `<C-k>` - previous window  
+

@@ -22,7 +22,6 @@ require('plugins')
 require('keybindings')
 
 -- Setup Lua language server using submodule
-require('lsp')
 require('lang')
 
 -- Read configs
@@ -32,5 +31,4 @@ require('config.completion')
 require('config.lualine')
 require('config.telescope')
 
--- Hide TODO highlight (i dont know what sets this so its going here for now)
-vim.cmd 'hi clear TODO'
+require('highlighting')
