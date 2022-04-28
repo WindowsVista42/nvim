@@ -13,6 +13,7 @@ That should be it, have fun.
 `<spc>la` - code actions  
 `<spc>lk` - show documentation  
 
+`<spc>,` - search buffer
 `<spc>.` - search file  
 `<spc>/` - search word  
 
